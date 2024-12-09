@@ -1,0 +1,181 @@
+body {
+	background: #e2e2e2;
+}
+
+.bg-primary {
+	background: #1973d7 !important;
+}
+
+.banner {
+	width: 100%;
+	height: 93vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+		url(../image/A-comprehensive-guide-to-contact-management.webp);
+	background-size: cover;
+	color: white;
+}
+
+.bannerabout {
+	width: 100%;
+	height: 93vh;
+	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+		url(../image/Multi-channel-Communication.png);
+	background-size: cover;
+	color: white;
+}
+.my-card {
+	padding: 20px;
+	background: #FFFFFF;
+}
+
+.regiser_bg {
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+		url(../image/registerbg.jpg);
+}
+
+.login-container {
+	margin-top: 1%;
+	margin-bottom: 5%;
+}
+
+.login-form-1 {
+	padding: 5%;
+	box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0
+		rgba(0, 0, 0, 0.19);
+}
+
+.login-form-1 h3 {
+	text-align: center;
+	color: #333;
+}
+
+.login-form-2 {
+	padding: 5%;
+	background: #0062cc;
+	box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0
+		rgba(0, 0, 0, 0.19);
+}
+
+.login-form-2 h3 {
+	text-align: center;
+	color: #fff;
+}
+
+.login-container form {
+	padding: 10%;
+}
+
+.btnSubmit {
+	width: 50%;
+	border-radius: 1rem;
+	padding: 1.5%;
+	border: none;
+	cursor: pointer;
+}
+
+.login-form-1 .btnSubmit {
+	font-weight: 600;
+	color: #fff;
+	background-color: #0062cc;
+}
+
+.login-form-2 .btnSubmit {
+	font-weight: 600;
+	color: #0062cc;
+	background-color: #fff;
+}
+
+.login-form-2 .ForgetPwd {
+	color: #fff;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.login-form-1 .ForgetPwd {
+	color: #0062cc;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+/* side bar style */
+@media only screen and (max-width : 600px) {
+	.sidebar {
+		display: none;
+		width: 80% !important;
+		background: #FFFFFF;
+		height: 100vh;
+		position: fixed;
+		padding-top: 20px;
+	}
+	.content{
+		margin-left: 0% !important;
+	}
+}
+
+.sidebar {
+	width : 18%;
+	background: #FFFFFF;
+	height: 100%;
+	position: fixed;
+	padding-top: 45px;
+	width: 18%;
+	z-index: 999999999999999999999999;	
+}
+
+.sidebar a {
+	display: block;
+	width: 100%;
+	padding: 10px 25px;
+	text-decoration: none;
+	color: gray;
+}
+
+.sidebar a:hover {
+	background: #e2e2e2;
+}
+
+.sidebar .divider {
+	height: .5px;
+	width: 100%;
+	background: #e2e2e2;
+	margin-top: 10px;
+}
+
+.content {
+	margin-left: 20%
+}
+.sidebar .crossbtn
+{
+	position: absolute;
+	top: 0px;
+	right: 35px;
+	font-size: 30px;
+	cursor: pointer;
+}
+.my_profile_picture{
+	width: 35px;
+	height: 35px;
+	object-fit:cover;
+	
+}
+
+
+/* search css */
+.search-container
+{
+	position: relative;
+		
+}
+.search-result
+{
+	position: absolute;
+	background: white;
+	width:100%;
+	padding: 10px;
+	border: 1px solid grey;
+	display: none;
+}
+.active{
+	background: #1973d7 !important;
+	color: white !important;
+}

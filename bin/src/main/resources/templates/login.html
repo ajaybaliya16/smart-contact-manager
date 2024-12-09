@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="base::layout(~{::section})">
+<head>
+<meta charset="UTF-8" />
+<title>This is home page</title>
+</head>
+<body>
+	<section>
+		<div class="container login-container">
+			<div class="row">
+				<div class="col-md-6 offset-md-3 login-form-1">
+					<h3>Login Form</h3>
+					<!-- message box -->
+					<div th:if="${session.message}" class="container">
+						<div th:classappend="${'alert '	+session.message.type}"
+							class="alert text-center" role="alert">
+							<span th:text="${session.message.content}"></span>
+
+						</div>
+						<th:block th:text="${@sessionHelper.removeMessageFromSession()}"></th:block>
+					</div>
+					<form th:action="@{/do_login}" method="post" action="#">
+						<!-- action name is mention in MyConfig file </-->
+						<div th:if="${param.error}" class="alert alert-danger">Invalid
+							Username and Password</div>
+						<div th:if="${param.logout}" class="alert alert-success">You
+							have been logged out</div>
+
+						<div class="form-group">
+							<input name="username" type="text" class="form-control"
+								placeholder="Your Email *" value="" />
+						</div>
+						<div class="form-group">
+							<input name="password" type="password" class="form-control"
+								placeholder="Your Password *" value="" />
+						</div>
+
+
+						<div class="form-group">
+							<input type="checkbox" value="" id="form2Example31" checked /> <label
+								for="form2Example31"> Remember me </label>
+						</div>
+
+
+						<div class="form-group">
+							<input type="submit" class="btnSubmit" value="Login" />
+						</div>
+						<div class="form-group">
+							<a href="/forgot" class="ForgetPwd">Forget Password?</a>
+						</div>
+						<div class="text-center">
+							<p>
+								Not a member? <a href="/signup">Register</a>
+							</p>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
