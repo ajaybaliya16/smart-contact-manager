@@ -21,6 +21,8 @@ import com.smart.service.emailService;
 import jakarta.servlet.http.HttpSession;
 import jakarta.validation.Valid;
 
+//second commit test
+
 @Controller
 public class HomeController {
 
